@@ -1,0 +1,5 @@
+print('PROGRAMA QUE LÊ QUANTO DINHEIRO A PESSOA TEM NA CARTEIRA E MOSTRAR QUANTOS DOLARES ELA PODE COMPRAR')
+print('=====================================================================================================')
+valor = int(input('Qual o valor em reais que Gustavo tem na sua carteira:'))
+print('Dinheiro em real que Gustavo tem na carteira {} reais , convertendo para dolares ele pode comprar {} dolares' .format(valor , valor/3.27))
+print(' DESAFIO 10 AULA 07 CONCLUIDO!')

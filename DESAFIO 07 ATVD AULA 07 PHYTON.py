@@ -1,0 +1,6 @@
+print('========================COLEGIO BEIJA MINHA ROLA===========================')
+print('========================NOTA DE UM ALUNO====================================')
+nota1 = int(input('O valor da primeira nota desse aluno:'))
+nota2 = int(input('O valor da segunda nota desse aluno:'))
+print(' A primeira nota desse aluno foi {} , a segunda nota desse mesmo aluno foi {} a média dele será {}' .format(nota1 , nota2 , (nota1+nota2)/2))
+print(' PARABÉNS, VOCÊ CONSEGUIU RESOLVER O DESAFIO 07!')

@@ -1,0 +1,10 @@
+print('Faça um programa que leia um ângulo qualquer e mostre na tela o valor do Seno, Cosseno e Tangente desse ângulo.')
+print('================================================================================================================')
+print('================================================================================================================')
+from math import radians , sin , cos , tan
+A = float(input('Leia um ângulo qualquer:'))
+sen = sin(radians(A))
+coss = cos(radians(A))
+tg = tan(radians(A))
+print('O valor do Seno de {} é {:2f} o do Cosseno é {:.2f} e a Tangente é {:.2f}'.format(A , sen , coss , tg))
+print('DESAFIO 18 AULA 08 CONCLUIDO!')
