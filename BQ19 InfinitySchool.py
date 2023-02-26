@@ -1,0 +1,11 @@
+print('                                     ATIVIDADE                                        ')
+print('-----------------------------------------------------------------------------------------')
+print('Faça um programa que faça uma contagem onde o usuário passa:')
+print('- Onde a contagem começa (Start).')
+print('- Onde ela termina (Stop).')
+print('- O passo da contagem (Step).')
+print('=='*40)
+inicio = int(input('Digite um número para inciar:'))
+fim = int(input('Digite um número para o fim:'))
+for numero2 in range (inicio, fim):
+    print(numero2)
