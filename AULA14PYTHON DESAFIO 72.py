@@ -9,6 +9,19 @@ while True:
         break
     print('Tente novamente. ', end = '')
 print(f'Você digitou o número {extenso[count_number]}')
+while True:
+    pergunta = str(input('Você quer continuar [S/N]:')).strip().upper()
+    if pergunta == 'Ss':
+    while True:
+        count_number = int(input('Digite um número entre 0 e 20:'))
+    elif count_number <= 0 and count_number <= 20:
+        break
+    print('Tente novamente.', end ='')
+    print(f'Você digitou o número {extenso[count_number]}')
+    if  pergunta == 'Nn':
+        print('FIM DO PROGRAMA...')
+        print('Volte sempre.')
+        break
 
                         
             
