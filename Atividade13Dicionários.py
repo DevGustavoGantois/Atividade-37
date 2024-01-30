@@ -17,7 +17,7 @@ while True:
 
     vote_user = input('Enter your whise (Enter 0 for finish whises):')
 
-    if vote_user == 0:
+    if vote_user == '0':
         break
     elif vote_user in ['1', '2', '3', '4', '5']:
         # Atualiza o dicionário de votos
@@ -30,7 +30,7 @@ while True:
 print('\n Finals results of votes:')
 for option, quantity_votes in wishes.items():
     print(f'Option {option}: {quantity_votes} votes.')
-
+    
 print("Vote finished. Thank you!!")
 
 
