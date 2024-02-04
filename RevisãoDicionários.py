@@ -324,28 +324,28 @@ while True:
 #Visualizar todos os alunos: O usuário poderá visualizar todos os alunos registrados no dicionário, exibindo seus respectivos números de matrícula.
 #O programa deve ser executado em um loop contínuo até que o usuário escolha sair.
 
-informacao_estudantes = {}
+information_students = {}
 
 while True:
-    nome = input('Digite o seu nome (ou "terminar o programa" para sair): ')
+    name = input('Enter your name(or "finish the program" for exit): ')
     
-    if nome.lower() == 'terminar o programa':
-        print("Saindo do programa...")
+    if name.lower() == 'finishing the program':
+        print("Exit the program...")
         break
 
-    numero_matricula = input('Digite o número da sua matrícula: ')
+    number_registration = input('Enter a number your registration: ')
 
-    if numero_matricula.lower() == 'remover matricula':
-        matricula_remover = input('Digite a matrícula que você deseja remover: ')
-        if matricula_remover in informacao_estudantes:
-            del informacao_estudantes[matricula_remover]
-            print(f"Matrícula {matricula_remover} removida com sucesso.")
+    if number_registration.lower() == 'remove registration':
+        remove_registration = input('Enter the license plate you want to remove: ')
+        if remove_registration in information_students:
+            del information_students[remove_registration]
+            print(f"Registration {remove_registration} removed.")
         else:
-            print(f"Matrícula {matricula_remover} não encontrada.")
+            print(f"Registration {remove_registration} not found.")
     else:
-        informacao_estudantes[numero_matricula] = nome 
+        registration_students[number_registration] = name 
 
-    print('\nInformações dos estudantes:')
-    for matricula_aluno, nome_aluno in informacao_estudantes.items():
-        print(f"Matrícula: {matricula_aluno}, Nome: {nome_aluno}")
+    print('\nInformation Students:')
+    for registration_students, name_student in information_students.items():
+        print(f"Registration: {registration_student}, Name: {name_student}")
 
