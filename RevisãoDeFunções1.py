@@ -136,11 +136,11 @@ def calculate_average(notes):
             students_notes.append(notes)
         except ValueError:
             print("The note is invalid. Type a valid number...")
-if students_notes:
-    average = sum(students_notes) / len(students_notes)
-    return average 
-else: 
-    return 0
+    if students_notes:
+        average = sum(students_notes) / len(students_notes)
+        return average 
+    else: 
+        return 0
 def verification_situation(average):
     if average < 7:
         print("You Repproved.")
@@ -151,6 +151,6 @@ def verification_situation(average):
     else:
         print("The note is not exist...")
         
-result = calculate_average(students_notes, average)
+result = calculate_average(students_notes)
 print(f"The result is: {result:.2f}")
 verification_situation(result)
