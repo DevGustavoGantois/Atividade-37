@@ -117,3 +117,44 @@ while True:
         if result_division is not None:
             print(f'The result of division -> {num1} / {num2} = {result_division}')
 
+#Desenvolva um programa em Python que permita ao usuário digitar 
+#várias notas. Em seguida, crie uma função chamada "calcular_media" que irá receber as 
+#notas digitadas e calcular a média do aluno. Também crie uma função chamada "verificar_situacao" 
+#que, com base na média calculada, irá exibir a situação do aluno: "Reprovado" se a média for menor que 7, "Aprovado" se a média for maior ou igual a 7, 
+#e "Parabéns, sua média é 10" se a média for igual a 10.
+
+students_notes = []
+
+def calculate_average(notes):
+    while True:
+        notes = input("Enter a note (Type 'exit program' for finish):")
+
+        if notes.lower() == 'exit program':
+            print('The program is finish.')
+            break
+
+    try:
+    notes = float(notes)
+    students_notes.append(notes)
+except ValueError:
+    print("The note is invalid. Type a valid number...")
+
+if students_notes:
+    average = sum(students_notes) / len(students_notes)
+    return average 
+else: 
+    return 0
+
+def verification_situation(average):
+    if average < 7:
+        print("You Repproved.")
+    elif average >= 7:
+        print("You Approved.")
+    elif average == 10:
+        print("Congrats you got top max note!")
+    else:
+        print("The note is not exist...")
+
+result = calculate_average(students_notes, average)
+print(f"The result is: {result:.2f}")
+verification_situation(result)
