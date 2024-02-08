@@ -128,23 +128,19 @@ students_notes = []
 def calculate_average(notes):
     while True:
         notes = input("Enter a note (Type 'exit program' for finish):")
-
         if notes.lower() == 'exit program':
             print('The program is finish.')
             break
-
-    try:
-    notes = float(notes)
-    students_notes.append(notes)
-except ValueError:
-    print("The note is invalid. Type a valid number...")
-
+        try:
+            notes = float(notes)
+            students_notes.append(notes)
+        except ValueError:
+            print("The note is invalid. Type a valid number...")
 if students_notes:
     average = sum(students_notes) / len(students_notes)
     return average 
 else: 
     return 0
-
 def verification_situation(average):
     if average < 7:
         print("You Repproved.")
@@ -154,7 +150,7 @@ def verification_situation(average):
         print("Congrats you got top max note!")
     else:
         print("The note is not exist...")
-
+        
 result = calculate_average(students_notes, average)
 print(f"The result is: {result:.2f}")
 verification_situation(result)
