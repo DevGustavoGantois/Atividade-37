@@ -29,6 +29,10 @@ A concise way to create lists.
 Exception Handling:
 try, except: Catches and handles exceptions.
 finally: Optional block that is always executed, regardless of whether an exception occurs or not.
+
+Functions:
+
+In Python, a function is a block of code that performs a specific task. It is defined using the def keyword, followed by the function name and parentheses that can contain parameters. The function body contains the code that performs the desired task. A function may or may not return a value using the return keyword. Functions are used to organize and reuse code, making it more modular and easier to understand
 ...
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -63,4 +67,8 @@ Uma maneira concisa de criar listas.
 Manuseio de Exceções:
 try, except: Captura e trata exceções.
 finally: Bloco opcional que é sempre executado, independentemente de ocorrer uma exceção ou não.
+
+Funções:
+
+Em Python, uma função é um bloco de código que realiza uma tarefa específica. Ela é definida usando a palavra-chave def, seguida pelo nome da função e parênteses que podem conter parâmetros. O corpo da função contém o código que executa a tarefa desejada. Uma função pode ou não retornar um valor usando a palavra-chave return. As funções são usadas para organizar e reutilizar o código, tornando-o mais modular e fácil de entender
 ...
