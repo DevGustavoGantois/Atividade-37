@@ -2,4 +2,4 @@ EN -> In this repository there are exercises in Python, my progress in the langu
 --------------------------------------------------------------------------------------------------------------------------------------------------
 PT -> Neste repositório há exercícios em Python, meu progresso na linguagem, existem várias atividades do básico até o intermediário...
 
-https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+![DevGustavoGantois]https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
