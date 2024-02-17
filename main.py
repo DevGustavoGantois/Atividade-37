@@ -1,11 +1,27 @@
-import manipulation_strings
+import CadastroAlunos
 
-string = 'Hi my name is Gustavo, i´m a professional programmer and bodybuilder, i compete in Mr. Olympia'
+while True:
+    print("\nEscolha uma opção:")
+    print("1 - Adicionar Aluno")
+    print("2 - Remover Aluno")
+    print("3 - Atualizar Aluno")
+    print("4 - Ver Alunos")
+    print('5 - Sair')
 
-result_string_option1 = manipulation_strings.reverse_string(string)
-result_string_option2 = manipulation_strings.count_string(string)
-result_string_option3 = manipulation_strings.palindrome_string(string)
+    opcao = input("Digite o número da opção desejada:")
 
-print('The reverse string = ',result_string_option1)
-print('The count string = ',result_string_option2)
-print('The palindrome in string is = ',result_string_option3)
+    if opcao == '1':
+        CadastroAlunos.AdicionarAluno()
+    elif opcao == '2':
+        CadastroAlunos.RemoverAlunos()
+    elif opcao == '3':
+        CadastroAlunos.AtualizarAluno()
+    elif opcao == '4':
+        CadastroAlunos.VerAlunos()
+    elif opcao == '5':
+        print("Programa encerrado.")
+        break
+    else:
+        print("Opção inválida. Tente novamente.")
+    
+
